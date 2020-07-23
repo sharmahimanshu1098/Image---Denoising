@@ -1,2 +1,5 @@
 # Image---Denoising
 This project proposes a novel image Denoising algorithm which accurately detects noisy pixels in images corrupted by Random Valued Impulse Noise at very high noise levels i.e. up to 95% noise density
+It uses two levels of thresholds to adequately addresses the drawbacks of existing methods, specially the misdetection of noisy pixels as noise free pixels and vice versa. Measures of Dispersion such as mean, Standard Deviation and Quartile have been used to define Thresholds. After the detection, a Fuzzy Switching Weighted Median Filter is applied to restore the corrupted image very close to the original image.
+As confirmed by the simulation results, the proposed method is superior to the existing methods in detection. A new Denoising method for effective removal of Random Valued Impulse Noise in grayscale images will be presented. The extensive Simulation results show that this method is capable of removing High Density RVIN while preserving minute image details. It will better result than the existing methods both in the visual aspects like SSIM as well as the mathematical parameters like MSE
+and PSNR. 
